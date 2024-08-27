@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login y Registro</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="card-container">
+            <div class="card" id="card-toggle">
+                <div id="toggle-content">
+                    <div>    
+                        <p>Aun no tienes una cuenta?</p>
+                        <button onclick="console.log(1);selectRegisterForm()">Registrarse</button>
+                    </div>
+                    <div>
+                        <p>Ya tienes una cuenta?</p>
+                        <button onclick="console.log(2);selectLoginForm()">Iniciar sesión</button>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+
+        <div class="form-wrapper">
+            <!-- Formulario de Login -->
+            <div id="login-form" class="form hidden">
+                <h2>Login</h2>
+                <form>
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" name="email" required>
+                    
+                    <label for="login-password">Contraseña:</label>
+                    <input type="password" id="login-password" name="password" required>
+                    
+                    <button type="submit">Iniciar Sesión</button>
+                </form>
+            </div>
+            
+            <!-- Formulario de Registro -->
+            <div id="register-form" class="form ">
+                <h2>Registro</h2>
+                <form>
+                    <label for="register-name">Nombre:</label>
+                    <input type="text" id="register-name" name="name" required>
+                    
+                    <label for="register-email">Email:</label>
+                    <input type="email" id="register-email" name="email" required>
+                    
+                    <label for="register-password">Contraseña:</label>
+                    <input type="password" id="register-password" name="password" required>
+                    
+                    <button type="submit">Registrarse</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/scripts.js"></script>
+</body>
+</html>
